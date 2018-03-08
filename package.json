@@ -1,9 +1,9 @@
 {
-  "name": "fe-bankify",
+  "name": "fe-react-template",
   "author": "ramshaw888",
   "license": "MIT",
   "version": "0.0.1",
-  "description": "Show bank accounts",
+  "description": "Hello There",
   "dependencies": {
     "react": "16.2.0",
     "react-dom": "16.2.0",
