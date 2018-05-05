@@ -1,0 +1,14 @@
+version: 2
+
+jobs:
+    build:
+        machine: true
+        steps:
+            - checkout
+            - run: docker build -t fe-bankify .
+
+workflows:
+    version: 2
+    docker_build:
+        jobs:
+            - build
