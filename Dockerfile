@@ -12,4 +12,5 @@ ADD ./src /app/src
 ADD ./webpack.config.js /app/webpack.config.js
 RUN yarn build
 ADD ./server.js /app/server.js
+ADD ./index.html /app/index.html
 CMD nginx; pm2-runtime /app/server.js
