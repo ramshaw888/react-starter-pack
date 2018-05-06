@@ -1,7 +1,8 @@
 FROM node:9
 RUN apt-get update
 RUN apt-get install nginx -y
-RUN npm install -g yarn
+ADD ./config/install_yarn.sh ./install_yarn.sh
+RUN bash install_yarn.sh
 RUN yarn global add pm2
 RUN mkdir /app
 ADD ./yarn.lock /app
